@@ -36,7 +36,7 @@ function App() {
     setUsername(userName);
     
     try {
-      const ws = new WebSocket("wss://13.61.97.168/:8080");
+      const ws = new WebSocket("ws://13.61.97.168/:8080");
       
       ws.onmessage = (event) => {
         try {
