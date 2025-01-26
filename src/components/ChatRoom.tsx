@@ -16,7 +16,7 @@ interface ChatRoomProps {
   username: string;
 }
 
-export function ChatRoom({ messages, inputVal, setInputVal, onSendMessage, roomId, username }: ChatRoomProps) {
+export function ChatRoom({ messages, inputVal, setInputVal, onSendMessage, roomId }: ChatRoomProps) {
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
