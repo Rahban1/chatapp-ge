@@ -18,7 +18,7 @@ function App() {
   const handleRoomSelect = (selectedRoom: string, userName: string) => {
     setRoomId(selectedRoom);
     setUsername(userName);
-    const ws = new WebSocket("http://localhost:8080");
+    const ws = new WebSocket("http://13.61.21.10:8080");
     
     ws.onmessage = (event) => {
       try {
